@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#180a10">
+    <title>Senga atalgan maktub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="star-field" aria-hidden="true"></div>
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <main class="experience">
+        <header class="top-bar">
+            <span class="brand"><span aria-hidden="true">✦</span> SIRLI MAKTUB</span>
+            <span id="step-counter" class="step-counter">01 / 06</span>
+        </header>
+
+        <section id="step-access" class="stage" aria-labelledby="access-title">
+            <div class="stage-content access-content">
+                <span class="eyebrow">Faqat ikkimiz biladigan</span>
+                <h1 id="access-title">Bu his bir so‘z bilan<br>qulflangan</h1>
+                <p class="script-note">Birinchi xotiramizni eslatadigan so‘z...</p>
+                <form id="access-form" class="form-stack">
+                    <label class="visually-hidden" for="secret-word">Maxfiy so‘z</label>
+                    <input
+                        id="secret-word"
+                        name="secret-word"
+                        type="text"
+                        maxlength="40"
+                        placeholder="Maxfiy so‘z"
+                        autocomplete="off"
+                        required
+                    >
+                    <button class="gold-button" type="submit">Ochish <span aria-hidden="true">→</span></button>
+                </form>
+                <p id="access-error" class="error-message" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section id="step-envelope" class="stage" aria-labelledby="envelope-title" hidden>
+            <div class="stage-content envelope-content">
+                <p class="eyebrow">Senga atab tayyorlandi</p>
+                <div class="envelope-art" aria-hidden="true">
+                    <div class="envelope-back"></div>
+                    <div class="envelope-letter"><span>✦</span></div>
+                    <div class="envelope-front"></div>
+                    <div class="wax-seal">♥</div>
+                </div>
+                <h1 id="envelope-title">Kichkina bir sir...</h1>
+                <p class="script-note">Maktub kim uchun?</p>
+                <form id="name-form" class="form-stack">
+                    <label class="visually-hidden" for="recipient-name">Ism</label>
+                    <input
+                        id="recipient-name"
+                        name="recipient-name"
+                        type="text"
+                        maxlength="40"
+                        placeholder="Ismini yoz..."
+                        autocomplete="name"
+                        required
+                    >
+                    <button class="gold-button" type="submit">Konvertni ochish <span aria-hidden="true">♥</span></button>
+                </form>
+            </div>
+        </section>
+
+        <section id="step-letter" class="stage" aria-labelledby="letter-title" hidden>
+            <div class="stage-content letter-content">
+                <p class="eyebrow">Senga atalgan so‘zlar</p>
+                <article class="letter-paper">
+                    <p class="letter-date">Yuragimdan, senga</p>
+                    <p>
+                        <strong id="letter-title">Tug‘ilgan kuniz muborak bo‘lsin, Bubur akam! 🖤🎂✨</strong>
+                        Allohim sizga uzoq umr, mustahkam sog‘lik, cheksiz baxt va qalbizdagi
+                        eng go‘zal orzularizni ro‘yobini nasib qilsin. Doim yuzizdan tabassum,
+                        qalbizdan xotirjamlik arimasin. 🤍
+                    </p>
+                    <p>
+                        Bilaszmi, hayotda ayrim insonlar bo‘ladi, ular bilan tanishganingdan
+                        keyin oddiy kunlar ham o‘zgacha ma’no kasb etadi. Siz men uchun ana
+                        shunday insonlardan birisiz. Siz bilan o‘tgan har bir uchrashuvim,
+                        har bir suhbatimiz qalbimda chiroyli xotira bo‘lib qoladi. 🥹❤️
+                    </p>
+                    <p>
+                        Yangi yoshingiz sizga faqat quvonch, omad va unutilmas baxtli kunlarni
+                        olib kelsin. Allohim sizni har doim o‘z panohida asrasin, niyatlarizga
+                        yetkizsin. Yuzizdan kulgu arimasin, chunki sizning baxtli bo‘lishizni
+                        chin dildan istaydigan insonlar bor. 🤲🏻🖤
+                    </p>
+                    <p>
+                        24 yoshingiz muborak bo‘lsin, Bubur akam! Hayotingiz doim chiroyli
+                        lahzalarga, qalbiz esa eng go‘zal hislarga to‘la bo‘lsin. ✨🌹
+                    </p>
+                </article>
+                <button id="to-plans" class="gold-button" type="button">Bugun nima qilamiz? <span aria-hidden="true">→</span></button>
+            </div>
+        </section>
+
+        <section id="step-plans" class="stage" aria-labelledby="plans-title" hidden>
+            <div class="stage-content plans-content">
+                <p class="eyebrow">Bugun hammasi sen uchun</p>
+                <h1 id="plans-title">Nima qilamiz?</h1>
+                <p class="stage-description">Ko‘ngling tusaganini tanla</p>
+                <div class="plan-list" role="group" aria-label="Bugungi reja">
+                    <button class="plan-option" type="button" data-plan="walk" aria-pressed="false">
+                        <span class="plan-icon" aria-hidden="true">🌙</span>
+                        <span class="plan-copy"><strong>Ovqatlanishga boramiz</strong><small>Yoqimli taom va faqat ikkimiz</small></span>
+                        <span class="plan-check" aria-hidden="true">✓</span>
+                    </button>
+                    <button class="plan-option" type="button" data-plan="escape" aria-pressed="false">
+                        <span class="plan-icon" aria-hidden="true">✨</span>
+                        <span class="plan-copy"><strong>Kechki sayrga chiqaylik</strong><small>Shahar chiroqlari ostida birga sayr qilamiz</small></span>
+                        <span class="plan-check" aria-hidden="true">✓</span>
+                    </button>
+                    <button class="plan-option" type="button" data-plan="dream" aria-pressed="false">
+                        <span class="plan-icon" aria-hidden="true">🍰</span>
+                        <span class="plan-copy"><strong>O‘zing xohlagan kun ko‘rishamiz</strong><small>Qaysi kun qulayligini o‘zing tanla</small></span>
+                        <span class="plan-check" aria-hidden="true">✓</span>
+                    </button>
+                    <button class="plan-option" type="button" data-plan="everything" aria-pressed="false">
+                        <span class="plan-icon" aria-hidden="true">🎁</span>
+                        <span class="plan-copy"><strong>Barchasini xohlayman</strong><small>Bu bayram bir kun bilan tugamaydi</small></span>
+                        <span class="plan-check" aria-hidden="true">✓</span>
+                    </button>
+                </div>
+                <button id="to-date" class="gold-button" type="button" disabled>Davom etish <span aria-hidden="true">→</span></button>
+            </div>
+        </section>
+
+        <section id="step-date" class="stage" aria-labelledby="date-title" hidden>
+            <div class="stage-content date-content">
+                <p class="eyebrow">Endi faqat kunini tanlash qoldi</p>
+                <h1 id="date-title">Qaysi kuni?</h1>
+                <p class="stage-description">Senga qulay sanani tanla</p>
+                <div id="date-options" class="date-options" role="group" aria-label="Uchrashuv sanasi"></div>
+                <button id="to-final" class="gold-button" type="button" disabled>Kelishdik <span aria-hidden="true">♥</span></button>
+            </div>
+        </section>
+
+        <section id="step-final" class="stage" aria-labelledby="final-title" hidden>
+            <div class="stage-content final-content">
+                <p class="eyebrow">Bu kun faqat bizniki</p>
+                <div class="tree-art" aria-hidden="true">
+                    <svg viewBox="0 0 320 300" role="img">
+                        <defs>
+                            <radialGradient id="tree-glow">
+                                <stop offset="0" stop-color="#ffd77a" stop-opacity=".56"/>
+                                <stop offset="1" stop-color="#ffd77a" stop-opacity="0"/>
+                            </radialGradient>
+                            <linearGradient id="tree-trunk" x1="0" y1="0" x2="1" y2="1">
+                                <stop stop-color="#fff0be"/>
+                                <stop offset="1" stop-color="#f39a24"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="160" cy="132" r="125" fill="url(#tree-glow)"/>
+                        <g fill="none" stroke="url(#tree-trunk)" stroke-linecap="round">
+                            <path d="M160 269V151m0 42-45-42m45 21 42-47m-42 7-35-39m35 51 34-27m-34 76-57-8m57-31 58 6m-58-41 8-48m-8 80-12-31" stroke-width="5"/>
+                            <path d="M160 157c-19-17-38-40-48-62m48 74c25-19 45-39 62-65m-62 89c-29-4-55-2-79 8m79-33c27 5 50 5 77-3m-77-13c-3-20-8-37-18-54m18 38c16-15 25-28 34-45" stroke-width="2.5"/>
+                        </g>
+                        <g fill="#ffe7a6">
+                            <circle cx="110" cy="91" r="4"/><circle cx="132" cy="101" r="3"/>
+                            <circle cx="213" cy="89" r="4"/><circle cx="193" cy="111" r="3"/>
+                            <circle cx="82" cy="179" r="3"/><circle cx="239" cy="163" r="3"/>
+                            <circle cx="122" cy="136" r="3"/><circle cx="202" cy="148" r="4"/>
+                            <circle cx="145" cy="66" r="3"/><circle cx="180" cy="74" r="3"/>
+                            <circle cx="100" cy="128" r="2"/><circle cx="224" cy="124" r="2"/>
+                            <circle cx="145" cy="172" r="2"/><circle cx="173" cy="124" r="2"/>
+                            <circle cx="127" cy="205" r="2"/><circle cx="193" cy="204" r="2"/>
+                        </g>
+                        <path d="M148 273h24" stroke="#ffd77a" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h1 id="final-title">Kelishdik, <span id="final-recipient"></span>! <span aria-hidden="true">♥</span></h1>
+                <div class="final-card">
+                    <p class="final-label">Bizning rejamiz</p>
+                    <p id="final-plan" class="final-plan"></p>
+                    <p id="final-description" class="final-note"></p>
+                    <span class="card-divider" aria-hidden="true">✦</span>
+                    <p class="final-label">Sana</p>
+                    <p id="final-date" class="final-date"></p>
+                    <p class="final-note">Bu kunni intiqlik bilan kutaman.</p>
+                </div>
+                <button id="restart" class="gold-button" type="button">Yana bir bor o‘qish <span aria-hidden="true">↻</span></button>
+            </div>
+        </section>
+
+        <footer class="bottom-bar" aria-hidden="true">
+            <span class="progress-dot active"></span>
+            <span class="progress-line"></span>
+            <span class="progress-dot"></span>
+            <span class="progress-line"></span>
+            <span class="progress-dot"></span>
+            <span class="progress-line"></span>
+            <span class="progress-dot"></span>
+            <span class="progress-line"></span>
+            <span class="progress-dot"></span>
+            <span class="progress-line"></span>
+            <span class="progress-dot"></span>
+        </footer>
+    </main>
+</body>
+</html>
